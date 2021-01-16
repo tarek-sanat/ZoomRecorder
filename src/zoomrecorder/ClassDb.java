@@ -51,6 +51,7 @@ public class ClassDb {
         return Integer.parseInt(dbConnect("ClassDuration"));
     }
     
+    // get the id of the class
     public String getId(){
         return dbConnect("ClassId");
     }
