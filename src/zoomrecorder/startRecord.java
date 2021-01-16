@@ -49,6 +49,7 @@ public class startRecord extends ClassDb implements Job {
         }       
     }
     
+    // press alt+f9 and start or stop recording the class
     public void StartStopRecording() throws AWTException{
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_ALT);
@@ -57,7 +58,7 @@ public class startRecord extends ClassDb implements Job {
         robot.keyRelease(KeyEvent.VK_F9);
     }
     
-    
+    // join class and launch the meeting 
     public void joinClass(Robot robot, startZoom launch) throws InterruptedException{
         launch.clickJoin(robot);
         Thread.sleep(1000);
@@ -66,6 +67,9 @@ public class startRecord extends ClassDb implements Job {
         
         
     }
+    
+    
+    // enter the id of the class in the zoom box
     public static void enterClassId(Robot robot, String id) throws InterruptedException{
         
         StringSelection stringSelection = new StringSelection(id);

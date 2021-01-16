@@ -34,13 +34,11 @@ public class startZoom {
     
     // will return the size of the zoom window
     public int[] windowRect(){
-        
         int[] rect;
         try {
             rect = GetWindowRect.getRect("Zoom");
             return rect;
         } 
-      
         catch (GetWindowRect.WindowNotFoundException | GetWindowRect.GetWindowRectException e) {
             return null;
         }
@@ -67,7 +65,6 @@ public class startZoom {
     }
     
     //joinMeeting
-    //clickOnJoin
     public void joinMeeting(Robot robot){
         // move mouse over join meeting
         robot.mouseMove(983, 654);
