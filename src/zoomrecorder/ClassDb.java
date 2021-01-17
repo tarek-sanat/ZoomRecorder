@@ -15,15 +15,13 @@ import java.sql.Statement;
  * @author tarek
  */
 public class ClassDb {
-    String url = "";                // database url:port/databaseName
-    String user = "";               // your database user
-    String password = "";           //your database password;
+    String url = "jdbc:sqlite:Class.db";            //your database password;
     
     ResultSet resultSet = null;
     String returnString;
     public String dbConnect(String elementToSelect){
         // connect to database
-        try (Connection connection = DriverManager.getConnection(url, user, password)) {
+        try (Connection connection = DriverManager.getConnection(url)) {
 
             Statement statement = connection.createStatement();
             // Create and execute a SELECT SQL statement.
