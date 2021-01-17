@@ -11,6 +11,7 @@ Before using this program you will need:
 ```
 - Zoom
 - Nvidia Shadow Play (only available for nvidia graphics cards)
+- You need to make sure that the keyboard shortcut for recording using ShadowPlay is ALT + F9
 ```
 
 ### CronMaker:
