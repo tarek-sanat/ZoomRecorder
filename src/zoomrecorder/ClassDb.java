@@ -15,9 +15,10 @@ import java.sql.Statement;
  * @author tarek
  */
 public class ClassDb {
-    String url = "jdbc:mysql://td5l74lo6615qq42.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/j0z2rlzcsmdpb77f";
-    String user = "xb4okm73tltld7mb";
-    String password = "ra7q2yok5dh3zsrl";
+    String url = "";                // database url:port/databaseName
+    String user = "";               // your database user
+    String password = "";           //your database password;
+    
     ResultSet resultSet = null;
     String returnString;
     public String dbConnect(String elementToSelect){
